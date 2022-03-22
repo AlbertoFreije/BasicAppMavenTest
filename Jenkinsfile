@@ -17,12 +17,12 @@
         stage ('Build') {
             steps {
                 sh 'mvn -Dmaven.test.failure.ignore=true install' 
+                sh 'mvn clean verify sonar:sonar -Dsonar.login=992f76e8559c7d4b133a40ded7d396cc4d1ad003'
                 sh 'java -jar target/gs-maven-0.1.0.jar'
             }
             post {
                 success {
                     junit 'target/surefire-reports/**/*.xml' 
-                    sh 'mvn clean verify sonar:sonar -Dsonar.login=992f76e8559c7d4b133a40ded7d396cc4d1ad003'
                 }
             }
         }
