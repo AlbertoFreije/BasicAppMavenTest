@@ -14,7 +14,7 @@ pipeline {
                         -Dsonar.projectKey=test-node-js \
                         -Dsonar.sources=. \
                         -Dsonar.css.node=. \
-                        -Dsonar.host.url=http://your-ip-here:9000 \
+                        -Dsonar.host.url=http://192.168.56.10:9000 \
                         -Dsonar.login=your-generated-token-from-sonarqube-container"
                     }
                 }
