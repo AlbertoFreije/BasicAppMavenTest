@@ -1,4 +1,4 @@
-pipeline {
+-pipeline {
     agent any
     tools { 
         maven 'Maven 3.3.9' 
@@ -22,6 +22,7 @@ pipeline {
             post {
                 success {
                     junit 'target/surefire-reports/**/*.xml' 
+                    sh 'mvn clean verify sonar:sonar -Dsonar.login=992f76e8559c7d4b133a40ded7d396cc4d1ad003'
                 }
             }
         }
