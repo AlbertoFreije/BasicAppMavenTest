@@ -3,7 +3,6 @@ pipeline {
     tools { 
         maven 'Maven 3.3.9' 
         jdk 'jdk8' 
-        nodejs "nodenv"
     }
     stages {
           stage("Code Quality Check via SonarQube") {
@@ -21,13 +20,6 @@ pipeline {
                 }
             }
           }
-          stage("Install Project Dependencies") {
-            steps {
-              nodejs(nodeJSInstallationName: 'nodenv'){
-                sh "npm install"
-              }
-            }
-        }
     }
     
 }
