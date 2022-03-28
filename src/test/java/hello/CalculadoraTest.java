@@ -10,11 +10,6 @@ public class CalculadoraTest {
   private Calculadora calculadora = new Calculadora(4,2);
 
   @Test
-  public void calculadoraSumarTest() {
-    assertThat(calculadora.sumar(), 6);
-  }
-
-  @Test
   public void calculadoraSumarTest2() {
     assertTrue(calculadora.sumar() == 6);
   }
