@@ -14,4 +14,9 @@ public class CalculadoraTest {
     assertThat(calculadora.sumar(), 6);
   }
 
+  @Test
+  public void calculadoraSumarTest2() {
+    assertTrue(calculadora.sumar() == 6);
+  }
+
 }
