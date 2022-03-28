@@ -17,7 +17,7 @@ public class GreeterTest {
 
   @Test
     public void testGreet() {
-      assertThat(hello.greeting("Bart Simpson"), is("Hello World!, I'm Bart Simpson"));
+      assertEquals("Hello World!, I'm alberto", hello.greeting("alberto"));
   }
 
 }
