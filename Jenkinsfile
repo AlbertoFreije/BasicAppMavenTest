@@ -18,8 +18,14 @@ pipeline {
                         -Dsonar.login=992f76e8559c7d4b133a40ded7d396cc4d1ad003"
                     }
                 }
+
             }
           }
+          stage ('Build') {
+            steps {
+                sh 'java -jar target/gs-maven-0.1.0.jar'
+            }
+        }
     }
     
 }
