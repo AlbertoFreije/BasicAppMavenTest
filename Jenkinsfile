@@ -24,6 +24,7 @@ pipeline {
           stage ('Build') {
             steps {
                 sh 'mvn -Dmaven.test.failure.ignore=true install' 
+                sh 'mvn test -Dtest = GreaterTest'
                 sh 'java -jar target/gs-maven-0.1.0.jar'
             }
         }
