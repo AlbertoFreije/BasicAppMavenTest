@@ -9,9 +9,9 @@ pipeline {
             steps {
                 script{
                     def scannerHome = tool 'sonarqube';
-                    withSonarQubeEnv("sonarqube-container") {
+                    withSonarQubeEnv("SonarQube") {
                         sh "${tool("sonarqube")}/bin/sonar-scanner \
-                        -Dsonar.projectKey=test-node-js \
+                        -Dsonar.projectKey=gs-maven \
                         -Dsonar.sources=. \
                         -Dsonar.css.node=. \
                         -Dsonar.host.url=http://192.168.56.10:9000 \
