@@ -14,10 +14,4 @@ public class GreeterTest {
   public void greeterSaysHello() {
     assertEquals("Hello world!", greeter.sayHello());
   }
-
-  @Test
-    public void testGreet() {
-      assertEquals("Hello World!, I'm alberto", hello.greeting("alberto"));
-  }
-
 }
