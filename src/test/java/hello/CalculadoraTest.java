@@ -23,10 +23,5 @@ public class CalculadoraTest {
   public void calculadoraMultiplicarTest() {
     assertTrue(calculadora.multiplicar() == 8);
   }
-  
-  @Test
-  public void calculadoraDividirTest() {
-    assertTrue(calculadora.dividir() == 2);
-  }
 
 }
