@@ -38,10 +38,10 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
+							<argLine>${surefireArgLine}</argLine>
                             <transformers>
                                 <transformer
                                     implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>hello.Calculadora</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
