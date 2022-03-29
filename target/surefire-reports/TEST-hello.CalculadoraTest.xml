@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="hello.CalculadoraTest" time="0.022" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="hello.CalculadoraTest" time="0.017" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.14+9-post-Debian-1deb11u1"/>
@@ -59,8 +59,8 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="hello.CalculadoraTest" name="calculadoraRestaTest" time="0.009"/>
-  <testcase classname="hello.CalculadoraTest" name="calculadoraDividirTest" time="0.001"/>
-  <testcase classname="hello.CalculadoraTest" name="calculadoraMultiplicarTest" time="0.01"/>
-  <testcase classname="hello.CalculadoraTest" name="calculadoraSumarTest" time="0.002"/>
+  <testcase classname="hello.CalculadoraTest" name="calculadoraRestaTest" time="0.008"/>
+  <testcase classname="hello.CalculadoraTest" name="calculadoraDividirTest" time="0.002"/>
+  <testcase classname="hello.CalculadoraTest" name="calculadoraMultiplicarTest" time="0.001"/>
+  <testcase classname="hello.CalculadoraTest" name="calculadoraSumarTest" time="0.006"/>
 </testsuite>
