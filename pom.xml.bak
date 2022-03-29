@@ -32,6 +32,15 @@
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.2.4</version>
                 <executions>
+					<execution>
+					<id>pre-unit-test</id>
+					<goals>
+						<goal>prepare-agent</goal>
+					</goals>
+					<configuration>
+						<propertyName>surefireArgLine</propertyName>
+					</configuration>
+				</execution>
                     <execution>
                         <phase>package</phase>
                         <goals>
@@ -50,22 +59,22 @@
 			</plugin>
 			<plugin>
 				<groupId>org.jacoco</groupId>
-    <artifactId>jacoco-maven-plugin</artifactId>
-    <version>0.8.7</version>
-    <executions>
-      <execution>
-        <id>prepare-agent</id>
-        <goals>
-         <goal>prepare-agent</goal>
-        </goals>
-      </execution>
-      <execution>
-        <id>report</id>
-        <goals>
-         <goal>report</goal>
-        </goals>
-      </execution>
-    </executions>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.7</version>
+				<executions>
+					<execution>
+						<id>prepare-agent</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+					<id>report</id>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
         </plugins>
     </build>
